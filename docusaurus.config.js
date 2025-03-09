@@ -29,7 +29,7 @@ const config = {
   onBrokenMarkdownLinks: 'warn',
 
   // 即使你不使用国际化，你也可以使用这个字段来设置
-  // 有用的元数据，如 html lang。例如，如果你的网站是中文，你可能想要
+  // 有用的元数据，如 html lang。例如，如果你的网站是中文，你可能需要
   // 将 "en" 替换为 "zh-Hans"。
   i18n: {
     defaultLocale: 'zh-Hans',
@@ -83,16 +83,17 @@ const config = {
         },
         items: [
           {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: '教程',
-          },
-          {
             type: 'doc',
             docId: 'Mixi/Mixi简介', // 指向 Mixi简介.md
             sidebarID: 'mixiSidebar',
             label: 'Mixi',
+            position: 'left',
+          },
+          {
+            type: 'doc',
+            docId: 'MaimBot/MaimBot简介', // 指向 MaimBot简介.md
+            sidebarID: 'maimSidebar',
+            label: 'MaimBot',
             position: 'left',
           },
           { to: '/blog', label: '博客', position: 'left' },
@@ -110,8 +111,11 @@ const config = {
             title: '文档',
             items: [
               {
-                label: '教程',
-                to: '/docs/intro',
+                label: 'Mixi',
+                to: '/docs/Mixi/Mixi简介',
+              },{
+                label: 'MaimBot',
+                to: '/docs/MaimBot/MaimBot简介',
               },
             ],
           },
