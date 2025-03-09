@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Jly的帮助站',
-  tagline: '折腾、Work etc.',
+  tagline: '折腾、创作 etc.',
   favicon: 'img/favicon.ico',
 
   // 在这里设置你的网站的生产 URL
@@ -70,7 +70,7 @@ const config = {
     ],
   ],
 
-  themeConfig:
+  themeConfig: 
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // 请替换为你的项目的社交卡
@@ -88,9 +88,16 @@ const config = {
             position: 'left',
             label: '教程',
           },
-          {to: '/blog', label: '博客', position: 'left'},
           {
-            href: 'https://github.com/enKl03B/justforhelp',
+            type: 'doc',
+            docId: 'Mixi/Mixi简介', // 指向 Mixi简介.md
+            sidebarID: 'mixiSidebar',
+            label: 'Mixi',
+            position: 'left',
+          },
+          { to: '/blog', label: '博客', position: 'left' },
+          {
+            href: 'https://github.com/enKl03B',
             label: 'GitHub',
             position: 'right',
           },
@@ -120,12 +127,12 @@ const config = {
               },
               {
                 label: 'GitHub',
-                href: 'https://github.com/enKl03B/justforhelp',
+                href: 'https://github.com/enKl03B',
               },
             ],
           },
         ],
-        copyright: `由 Jly 2024-${new Date().getFullYear()} . 使用 Docusaurus 搭建.`,
+        copyright: `Jly 2024-${new Date().getFullYear()} . 使用 Docusaurus 搭建.`,
       },
       prism: {
         theme: prismThemes.github,
