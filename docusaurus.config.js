@@ -84,6 +84,13 @@ const config = {
         items: [
           {
             type: 'doc',
+            docId: 'Intro/Intro', // 指向 Intro.md
+            sidebarID: 'mixiSidebar',
+            label: '导航',
+            position: 'left',
+          },
+          {
+            type: 'doc',
             docId: 'Mixi/Mixi简介', // 指向 Mixi简介.md
             sidebarID: 'mixiSidebar',
             label: 'Mixi',
@@ -96,10 +103,15 @@ const config = {
             label: 'MaimBot',
             position: 'left',
           },
-          { to: '/blog', label: '博客', position: 'left' },
+          { to: '/blog', label: '更新记录', position: 'left' },
           {
-            href: 'https://github.com/enKl03B',
-            label: 'GitHub',
+            href: 'https://stats.uptimerobot.com/bYVW2cRJ5T',
+            label: '状态',
+            position: 'right',
+          },
+          {
+            href: 'https://078465.xyz',
+            label: '博客',
             position: 'right',
           },
         ],
@@ -111,9 +123,14 @@ const config = {
             title: '文档',
             items: [
               {
+                label: '导航',
+                to: '/docs/Intro',
+              },
+              {
                 label: 'Mixi',
                 to: '/docs/Mixi/Mixi简介',
-              },{
+              },
+              {
                 label: 'MaimBot',
                 to: '/docs/MaimBot/MaimBot简介',
               },
@@ -126,12 +143,16 @@ const config = {
             title: '更多',
             items: [
               {
-                label: '博客',
+                label: '更新记录',
                 to: '/blog',
               },
               {
                 label: 'GitHub',
                 href: 'https://github.com/enKl03B',
+              },
+              {
+                label: '状态',
+                href: 'https://stats.uptimerobot.com/bYVW2cRJ5T',
               },
             ],
           },
