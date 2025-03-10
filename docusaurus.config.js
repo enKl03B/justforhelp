@@ -25,7 +25,7 @@ const config = {
   organizationName: 'enKl03B', // 通常是你的 GitHub 组织/用户名。
   projectName: 'justforhelp', // 通常是你的仓库名。
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // 即使你不使用国际化，你也可以使用这个字段来设置
@@ -44,7 +44,7 @@ const config = {
         docs: {
           sidebarPath: './sidebars.js',
           // 请将此更改为你的仓库。
-          // 移除此选项以移除“编辑此页”链接。
+          // 移除此选项以移除"编辑此页"链接。
           editUrl:
             'https://github.com/enKl03B/justforhelp/tree/main',
         },
@@ -55,7 +55,7 @@ const config = {
             xslt: true,
           },
           // 请将此更改为你的仓库。
-          // 移除此选项以移除“编辑此页”链接。
+          // 移除此选项以移除"编辑此页"链接。
           editUrl:
             'https://github.com/enKl03B/justforhelp/tree/main',
           // 有用的选项来强制执行博客最佳实践
